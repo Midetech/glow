@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Recoleta Regular DEMO";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Recoleta Regular DEMO"),
+    url("./assets/recoleta-cufonfonts-webfont/Recoleta-RegularDEMO.woff") format("woff");
+}
+body {
+  background-color: #faf7f5;
+}

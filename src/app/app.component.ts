@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'glow';
+
+  products = [{ name: "Shower butter", price: "190.99" }, { name: "Shower butter", price: "190.99" }, { name: "Shower butter", price: "190.99" }, { name: "Shower butter", price: "190.99" }, { name: "Shower butter", price: "190.99" },]
 }

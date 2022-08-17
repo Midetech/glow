@@ -2,13 +2,15 @@
 <div class="header">
   <nav class="navbar">
     <h1>Glow</h1>
-    <ul>
-      <li>Products</li>
-      <li>About</li>
-      <li>Blog</li>
-      <li>Reviews</li>
-    </ul>
-    <div class="shopping-bag"></div>
+    <div class="nav-links">
+      <ul>
+        <li>Products</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Reviews</li>
+      </ul>
+      <div class="shopping-bag"></div>
+    </div>
   </nav>
 
   <div class="hero--section">
@@ -24,6 +26,76 @@
         <p>► How to use</p>
       </div>
     </div>
-    <div class="hero--section__right"></div>
+    <div class="hero--section__right">
+      <img src="../assets/personal-care-01.png" />
+    </div>
+  </div>
+</div>
+
+<div class="section--one">
+  <div class="section--one__left">
+    <img src="../assets/curology-3-set.jpeg" />
+
+    <div class="circle">
+      <svg viewBox="0 0 100 100" width="140" height="140">
+        <defs>
+          <path
+            id="circle"
+            d="
+            M 50, 50
+            m -37, 0
+            a 37,37 0 1,1 76,0
+            a 37,37 0 1,1 -76,0"
+          />
+        </defs>
+        <text font-size="13">
+          <textPath xlink:href="#circle">
+            Explore your product - Explore your product-
+          </textPath>
+        </text>
+      </svg>
+    </div>
+  </div>
+  <div class="section--one__right">
+    <div>
+      <h2>
+        The self care brand that's <br />setting a new
+        <span
+          >standard<br />
+          Clean</span
+        >
+        products.
+      </h2>
+      <div class="group--texts">
+        <div class="group--text">
+          <p class="title">Where are products made?</p>
+          <p class="text">
+            Many brands, especially in period care, carry products that takes
+            centuries
+          </p>
+        </div>
+        <div class="group--text">
+          <p class="title">Where are products made?</p>
+          <p class="text">
+            Many brands, especially in period care, carry products that takes
+            centuries
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="products--section">
+  <div class="product--list">
+    <div class="text-content">
+      <h3>Trending On <span>Essentials</span></h3>
+      <p>
+        Made with nature's best ingredients - our products' transparent
+        ingredient. Fear of God Essentials.
+      </p>
+      <button>Browse all products →</button>
+    </div>
+    <div class="product--list__item" *ngFor="let product of products"></div>
   </div>
 </div>
