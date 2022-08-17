@@ -45,7 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     margin-top: 2rem;
 
     &__left {
@@ -110,10 +110,10 @@
   position: relative;
   &__left {
     width: 32%;
-    height: 650px;
+    height: 520px;
     position: relative;
-    left: 10%;
-    top: 5px;
+    left: 11%;
+    top: 4px;
     z-index: 1;
     img {
       border-top-left-radius: 70%;
