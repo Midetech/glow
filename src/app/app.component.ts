@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import Aos from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'glow';
 
-  products = [{ name: "Shower butter", price: "190.99" }, { name: "Shower butter", price: "190.99" }, { name: "Shower butter", price: "190.99" }, { name: "Shower butter", price: "190.99" }, { name: "Shower butter", price: "190.99" },]
+  constructor() { }
+
+
+  ngOnInit(): void {
+    // Aos.init();
+  }
+
+  products = [{ name: "Shower butter", price: "190.99", image: "../assets/pmv.png" },
+  { name: "Shower butter", price: "190.99", image: "../assets/Herbal.png" },
+  { name: "Shower butter", price: "190.99", image: "../assets/jeroen.png" },
+  { name: "Shower butter", price: "190.99", image: "../assets/scandinavian.png" },
+  { name: "Shower butter", price: "190.99", image: "../assets/pmv.png" },]
 }
