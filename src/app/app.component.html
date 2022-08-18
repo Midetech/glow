@@ -1,5 +1,4 @@
-<div style="width: 1440px">
-  <!--The content below is only a placeholder and can be replaced.-->
+<div>
   <div class="header">
     <nav class="navbar">
       <h1>Glow</h1>
@@ -39,7 +38,7 @@
   </div>
 
   <div class="section--one">
-    <div class="section--one__left animate__animated animate__bounceInLeft">
+    <div class="section--one__left" data-aos="zoom-in-right">
       <img src="../assets/curology-3-set.jpeg" />
 
       <div class="circle">
@@ -62,7 +61,12 @@
         </svg>
       </div>
     </div>
-    <div class="section--one__right">
+    <div class="section--one__right" data-aos="zoom-in-left">
+      <img src="../assets/new.svg" alt="" class="new" />
+      <div class="video--container">
+        <img src="../assets/play-.svg" alt="" class="play" />
+        <img src="../assets/curolog-in-use.jpeg" class="video" />
+      </div>
       <div>
         <h2>
           The self care brand that's <br />setting a new
@@ -101,7 +105,7 @@
       <div
         class="text-content"
         data-aos="fade-down-left"
-        data-aos-duration="300"
+        data-aos-duration="3000"
       >
         <h3>Trending On <span>Essentials</span></h3>
         <p>
@@ -219,6 +223,199 @@
         </div>
         <p class="product--name">{{ product.name }}</p>
         <p class="product--price">{{ product.price | currency }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="review--section"
+    data-aos="zoom-in-right"
+    data-aos-duration="3000"
+  >
+    <div class="review--section__left" data-aos="zoom-in-right">
+      <h3>We make going all natural <span>Beauty</span>.</h3>
+      <p>
+        Made with nature's best ingredients - our products' transparent
+        ingredient. Fear of God Essentials.
+      </p>
+
+      <div class="reviews">
+        <div class="review" *ngFor="let review of reviews">
+          <p class="title">{{ review.title }}</p>
+          <p class="number">{{ review.number }}</p>
+        </div>
+      </div>
+
+      <div class="customer--image" data-aos="zoom-in-up">
+        <img src="../assets/beautiful-brunette.png" />
+      </div>
+    </div>
+  </div>
+
+  <div class="faq--section">
+    <div class="faq--section__left" data-aos="zoom-out-down">
+      <img src="../assets/curology-3.jpeg" />
+    </div>
+
+    <div
+      class="faq--section__right"
+      data-aos="zoom-in-right"
+      data-aos-duration="2000"
+    >
+      <h3>You have <span>questions,</span> we have answers.</h3>
+      <div class="faqs">
+        <div class="faq" *ngFor="let faq of faqs; let i = index">
+          <div class="faq--header" (click)="handleOpenFaq(i)">
+            <div class="faq--question">{{ faq.question }}</div>
+            <img *ngIf="selectedIndex !== i" src="../assets/plus.svg" />
+            <img *ngIf="selectedIndex === i" src="../assets/minus.svg" />
+          </div>
+
+          <p class="faq--answer" *ngIf="isOpen && selectedIndex === i">
+            {{ faq.answer }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider--section">
+    <div class="slider">
+      <img class="quote" src="../assets/left-quote.svg" />
+
+      <p>
+        The UK jewellery awards is an event we always look forward to and we are
+        so honoured to be recognised.
+      </p>
+
+      <div class="details">
+        <p class="name">Jane Cooper</p>
+        <p class="country">Napeville, USA</p>
+      </div>
+
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    <div class="slider--image" data-aos="zoom-in-up" data-aos-duration="3000">
+      <img src="../assets/personal-care-01.png" class="image" />
+    </div>
+  </div>
+
+  <div style="position: relative">
+    <div class="trusted--brands">
+      <div class="brands">
+        <img
+          src="../assets/calvin-klein-cosmetics.png"
+          class="animate__animated animate__fadeInRightBig"
+        />
+        <img
+          src="../assets/curology-logo.png"
+          class="animate__animated animate__fadeInRightBig"
+        />
+        <img
+          src="../assets/calvin-klein-cosmetics.png"
+          class="animate__animated animate__fadeInRightBig"
+        />
+        <img
+          src="../assets/curology-logo.png"
+          class="animate__animated animate__fadeInRightBig"
+        />
+
+        <img
+          src="../assets/calvin-klein-cosmetics.png"
+          class="animate__animated animate__fadeInRightBig"
+        />
+      </div>
+    </div>
+
+    <div class="use--case">
+      <div class="case" data-aos="zoom-in-left" data-aos-duration="3000">
+        <img src="../assets/curolog-in-use.jpeg" />
+      </div>
+      <div class="case" data-aos="zoom-in-left" data-aos-duration="3000">
+        <img src="../assets/curology.jpeg" />
+      </div>
+      <div class="case" data-aos="zoom-in-left" data-aos-duration="3000">
+        <img src="../assets/curology-2.jpeg" />
+      </div>
+      <div class="check--us" data-aos="zoom-in-left" data-aos-duration="3000">
+        <img src="../assets/instagram.svg" />
+        <p>Join us and get all services we provide.</p>
+        <button>→</button>
+      </div>
+    </div>
+
+    <div class="footer--section">
+      <div
+        class="footer--items animate__animated animate__bounceInDown animate__slower"
+      >
+        <div class="glow">
+          <h1>Glow</h1>
+          <p>
+            Keep Up With Our New Releases, Beauty Tips And What Emma's Been Up
+            To.
+          </p>
+
+          <div class="socials">
+            <a href="https://www.facebook.com/curology">
+              <img src="../assets/facebook.svg" />
+            </a>
+            <a href="https://www.instagram.com/curology">
+              <img src="../assets/instagram.svg" />
+            </a>
+            <a href="https://www.twitter.com/curology">
+              <img src="../assets/twitter.svg" />
+            </a>
+            <a href="https://www.linkedin.com/curology">
+              <img src="../assets/linkedin.svg" />
+            </a>
+          </div>
+        </div>
+
+        <div class="company">
+          <h2>Company</h2>
+          <ul>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>Branding</li>
+            <li>Newsroom</li>
+          </ul>
+        </div>
+        <div class="resources">
+          <h2>Resources</h2>
+          <ul>
+            <li>College</li>
+            <li>Support</li>
+            <li>Safety</li>
+            <li>Streamkit</li>
+          </ul>
+        </div>
+        <div class="terms">
+          <h2>Terms & Condition</h2>
+          <ul>
+            <li>Policy</li>
+            <li>FAQ</li>
+            <li>Return & Delivery</li>
+            <li>Tracking</li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <h2>Subscribe</h2>
+          <p>Get 10% off your first order.</p>
+
+          <div class="form">
+            <input type="text" placeholder="Enter your email" />
+            <div class="send--button">
+              <img src="../assets/send.svg" width="30px" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &copy; 2022 Musemind | All rights rreserved.
       </div>
     </div>
   </div>
